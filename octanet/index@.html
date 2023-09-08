@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>indie music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <div class="navbar">
+         <p><img src="media/download__3_-removebg-preview.png" class="logo">Indie Music</p>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="file:///C:/Users/Bhavya/Desktop/m/list/songlist.html">Song List</a></li>
+                <li><a href="#">review</a></li>
+                <li><a href="#">features</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>THE<br>REAL<br>SOUND</h1>
+
+            </div>
+                <div class="right-col">
+                    <p>Click Here To Listen</p>
+                    <img src="media/play-removebg-preview (1).png" id="icon">
+
+                </div>
+        </div>
+        
+        </div>
+    
+    <audio id="mySong">
+        <source src="media/WhatsApp Audio 2022-02-25 at 21.17.38.mpeg" type="audio/mpeg">
+    </audio>
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            if(mySong.paused){
+                mySong.play();
+                icon.src="media/pause-removebg-preview.png"
+            }else{
+                mySong.pause();
+                icon.src="media/play-removebg-preview (1).png";
+            }
+        }
+    </script>
+</body>
+</html>
